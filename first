@@ -1,0 +1,82 @@
+#include<string.h>
+#include<iostream.h>
+#include<stdlib.h>
+
+void randomize();
+
+struct Genesis
+{ Date timestamp;
+  String data;
+  int nodeNumber;
+  String nodeId;
+  String referenceNodeId;
+  String childreferenceNodeId;
+  String genesisreferenceNodeId;
+  String hashvalue;
+  void display();
+  int generatehash()
+  { int s=10000;
+  int x=random(1000);
+  s=s+x;
+  if(check(s,tree)!=0)
+  generatehash();
+  return s;
+  }
+ 
+  String generatedata()
+  {
+    static int a=100;
+    String first=itoa(a);
+    final=strcat(final,first)
+    String ownername;
+    gets(ownername);
+    final=strcat(final,ownername);
+    String hash=itoa(generatehash()); 
+    final=strcat(final,hash);
+    return final;
+    }
+    void input()
+  {   String data=generatedata();
+  }
+  void generatenodeNumber(){}
+  }gen;
+    
+  
+    struct Tree
+    { Genesis gen;
+    Tree* left;
+    Tree* right;
+    Tree* parent;
+    }tree;
+    
+    struct Tree:: void root()
+    { 
+      gen.input();
+      left=NULL;
+      right=NULL;
+      parent=NULL;
+     }
+    
+    struct Tree:: void insert()
+    { Genesis* gene = new Genesis;
+       left=NULL;
+       right=NULL;
+       gene.input();
+       
+    }
+    struct Tree:: void findheight()
+    { recursive program
+    }
+    struct Tree:: void comparevalue()
+    { gen.generatenodeNumber();
+    if((tree.left.gen.nodeNumber + tree.right.gen.nodeNumber) > tree.gen.nodeNumber)
+       comparevalues();
+    }
+    
+    int main()
+    { tree.root();
+      tree.insert();
+    }
+    
+    
+   
